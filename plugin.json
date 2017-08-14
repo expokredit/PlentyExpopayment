@@ -1,0 +1,18 @@
+{
+    "label": {
+        "de": "ExpoKredit Schnittstelle",
+        "en": "Expokredit payment method"
+    },
+    "copyright": "",
+    "license": "MIT",
+    "link": "http://expokredit.de",
+    "author": "Expokredit GmbH",
+
+    "currentVersion": "1.1.0",
+    "compatibility": {
+        "minimumVersion": "5.0.0",
+        "maximumVersion": null,
+        "blacklist": [
+        ]
+    }
+}

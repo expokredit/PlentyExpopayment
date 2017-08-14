@@ -1,0 +1,46 @@
+#expo{
+
+  position: relative;
+
+  .label{
+    background-color: white;
+  }
+
+  .unitize-padding(40, 0);
+
+  &:after {
+    position: relative;
+    content: " ";
+    width: 100%;
+    text-align: right;
+    border-top: 1px dotted #999;
+    padding-top: 10px;
+    background-image: url('/engine/Shopware/Plugins/Local/Frontend/ComerPluginExpoKredit/Views/frontend/_public/src/img/expokredit-logo.png');
+    background-position: right center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-top: 20px;
+    height: 80px;
+  }
+
+  div.wide {
+    padding: 10px 0;
+    margin-top: 20px;
+  }
+
+  button {
+    .btn;
+    .is--primary;
+  }
+  
+  input[readonly] {
+    border: 0px !important;
+    background: transparent !important;
+    box-shadow: none;
+  }
+
+}
+.comer-redirecting{
+    text-align: center;
+    margin-top: 80px;
+}

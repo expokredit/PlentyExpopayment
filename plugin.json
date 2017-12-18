@@ -1,18 +1,38 @@
 {
-    "label": {
-        "de": "ExpoKredit Schnittstelle",
-        "en": "Expokredit payment method"
-    },
-    "copyright": "",
-    "license": "MIT",
-    "link": "http://expokredit.de",
-    "author": "Expokredit GmbH",
-
-    "currentVersion": "1.1.0",
-    "compatibility": {
-        "minimumVersion": "5.0.0",
-        "maximumVersion": null,
-        "blacklist": [
-        ]
-    }
+    "version"           : "1.0.0",
+    "name"              : "Expokredit",
+    "marketplaceName"   : {"de":"Expokredit Zahlungsmethode","en":"Expokredit payment method"},
+    "license"           : "AGPL-3.0",
+    "pluginIcon"        : "icon_plugin_xs.png",
+    "price"             : 0.00,
+    "description"       : "Expokredit plugin for plentymarkets online stores",
+    "shortDescription"  : {"de": "Zahlungsart Rechnung für plentymarkets Webshops","en": "Payment method invoice for plentymarkets online stores"},
+    "categories"        : ["3519"],
+    "author"            : "Expokredit GmbH",
+    "authorIcon"        : "icon_author_xs.png",
+    "email"             : "info@expokredit.de",
+    "phone"             : "+49 69 823 674 58",
+    "keywords"          : ["kredit", "Expokredit", "official", "plentymarkets", "payment"],
+    "type"              : "payment",
+    "namespace"         : "Expokredit",
+    "serviceProvider"   : "Expokredit\\Providers\\ExpokreditServiceProvider",
+    "javaScriptFiles"   : [],
+    "containers"        : [],
+    "dataProviders"     :
+    [
+        {
+            "key"           :"Expokredit\\Providers\\Icon\\IconProvider",
+            "name"          :"Expokredit icon",
+            "description"   :"Display the icon for this payment method"
+        },
+        {
+            "key"           :"Expokredit\\Providers\\ExpokreditOrderConfirmationDataProvider",
+            "name"          :"Expokredit form",
+            "description"   :"Display the ExpoForm on the order confirmation page"
+        }
+    ],
+    "dependencies"      : [],
+    "runOnBuild"        : [
+        "Expokredit\\Migrations\\CreateSettings_1_0_0"
+    ]
 }
